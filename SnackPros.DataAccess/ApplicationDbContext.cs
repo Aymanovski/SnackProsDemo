@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace SnackPros.Data
+namespace SnackPros.DataAccess
 {
     public class ApplicationDbContext : IdentityDbContext
     {
