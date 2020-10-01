@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnackPros", "SnackPros\SnackPros.csproj", "{4C436AEF-B736-45A5-8100-222DFFCB2D92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnackPros.DataAccess", "SnackPros.DataAccess\SnackPros.DataAccess.csproj", "{8512945E-0998-4385-BDBD-CD6F6999E68A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnackPros.DataAccess", "SnackPros.DataAccess\SnackPros.DataAccess.csproj", "{8512945E-0998-4385-BDBD-CD6F6999E68A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnackPros.Models", "SnackPros.Models\SnackPros.Models.csproj", "{14529624-1E0B-4DBA-9ACE-B3CBEF63870D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnackPros.Models", "SnackPros.Models\SnackPros.Models.csproj", "{14529624-1E0B-4DBA-9ACE-B3CBEF63870D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnackPros.Utility", "SnackPros.Utility\SnackPros.Utility.csproj", "{6E79A79D-07C4-4710-AA8F-0B8ED3BBE5DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnackPros.Utility", "SnackPros.Utility\SnackPros.Utility.csproj", "{6E79A79D-07C4-4710-AA8F-0B8ED3BBE5DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
