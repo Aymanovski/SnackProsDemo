@@ -5,7 +5,7 @@ using System.Text;
 
 namespace SnackPros.DataAccess.Data.Repository
 {
-    class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly ApplicationDbContext _db;
 
