@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SnackPros.Models;
 
 namespace SnackPros.DataAccess
 {
@@ -11,6 +12,9 @@ namespace SnackPros.DataAccess
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+
         }
+
+        public DbSet<Category> Category { get; set; }
     }
 }
