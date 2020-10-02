@@ -15,10 +15,13 @@ namespace SnackPros.DataAccess.Data.Repository
             _db = db;
             Category = new CategoryRepository(_db);
             SnackType = new SnackTypeRepository(_db);
+            MenuItem = new MenuItemRepository(_db);
         }
 
         public  ICategoryRepository Category { get; private set; } // DO NOT set outside of this 
         public ISnackTypeRepository SnackType { get; private set; } // DO NOT set outside of this 
+
+        public IMenuItemRepository MenuItem { get; private set; } // DO NOT set outside of this 
 
         //Implement Save()
         public void Dispose()

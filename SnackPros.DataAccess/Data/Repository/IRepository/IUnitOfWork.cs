@@ -9,6 +9,7 @@ namespace SnackPros.DataAccess.Data.Repository.IRepository
         // All the work in a single transaction or batch with a save function to push to database
         ICategoryRepository Category { get; }
         ISnackTypeRepository SnackType { get; }
+        IMenuItemRepository MenuItem { get; }
 
         void Save();
     }
