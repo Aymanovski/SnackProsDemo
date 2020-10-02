@@ -1,4 +1,5 @@
 ﻿using SnackPros.DataAccess.Data.Repository.IRepository;
+using SnackPros.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,9 +14,11 @@ namespace SnackPros.DataAccess.Data.Repository
         {
             _db = db;
             Category = new CategoryRepository(_db);
+            SnackType = new SnackTypeRepository(_db);
         }
 
         public  ICategoryRepository Category { get; private set; } // DO NOT set outside of this 
+        public ISnackTypeRepository SnackType { get; private set; } // DO NOT set outside of this 
 
         //Implement Save()
         public void Dispose()
