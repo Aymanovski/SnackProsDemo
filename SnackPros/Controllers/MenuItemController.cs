@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SnackPros.DataAccess.Data.Repository;
@@ -15,11 +16,12 @@ namespace SnackPros.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
         //Will be deleting images from server
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IWebHostEnvironment _hostingEnvironment;
 
-        public MenuItemController(IUnitOfWork unitOfWork)
+        public MenuItemController(IUnitOfWork unitOfWork, IWebHostEnvironment hostEnvironment)
         {
             _unitOfWork = unitOfWork;
+            _hostingEnvironment = hostEnvironment;
         }
 
         [HttpGet]
