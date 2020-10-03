@@ -5,3 +5,6 @@ ASP.NET Core Razor Pages Demo
 - Repository Pattern
 - API Controllers 
 - Server/Client Validation
+- DataBase Migrations (code first approach)
+- Table creating/sorting on load
+- File Uploading
