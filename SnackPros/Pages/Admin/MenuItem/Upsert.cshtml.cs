@@ -29,6 +29,7 @@ namespace SnackPros.Pages.Admin.MenuItem
         //populate the viewmodel dropdown for Categorylist  and Snack list
         public IActionResult OnGet(int? id)
         {
+
             MenuItemObj = new MenuItemVM
             {
                 CategoryList = _unitOfWork.Category.GetCategoryListForDropDown(),
@@ -55,6 +56,12 @@ namespace SnackPros.Pages.Admin.MenuItem
 
             if (!ModelState.IsValid)
             {
+                MenuItemObj = new MenuItemVM
+                {
+                    CategoryList = _unitOfWork.Category.GetCategoryListForDropDown(),
+                    SnackTypeList = _unitOfWork.SnackType.GetSnackTypeListForDropDown(),
+                    MenuItem = new Models.MenuItem()
+                };
                 return Page();
             }
 
