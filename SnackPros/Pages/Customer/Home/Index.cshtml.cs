@@ -24,7 +24,7 @@ namespace SnackPros.Pages.Customer.Home
 
         public void OnGet()
         {
-            MenuItemList = _unitOfWork.MenuItem.GetAll(null, null, "Category, SnackType");
+            MenuItemList = _unitOfWork.MenuItem.GetAll(null, null, "Category,SnackType");
             // ordered definition here for Category items by ascending order
             CategoryList = _unitOfWork.Category.GetAll(null, q => q.OrderBy(c => c.DisplayOrder), null);
         }

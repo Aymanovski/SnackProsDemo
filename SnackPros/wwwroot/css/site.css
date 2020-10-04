@@ -174,13 +174,20 @@ body {
         margin: 0 0 15px;
     }
 
+    .card-title {
+        margin-bottom: 20px;
+    }
+.card-img-top {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover;
+}
 
 
 .form-control, .btn {
     min-height: 38px;
     border-radius: 2px;
 }
-
 
 
 
